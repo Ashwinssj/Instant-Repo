@@ -37,7 +37,7 @@ export async function researcher(
 
   let isFirstToolResponse = true
   const result = await nonexperimental_streamText({
-    model: openai.chat(process.env.OPENAI_API_MODEL || 'gpt-4-turbo'),
+    model: openai.chat(process.env.OPENAI_API_MODEL || 'gpt-4'),
     maxTokens: 2500,
     system: `As a professional search expert, you possess the ability to search for public github repositories to help user find a project to use a startboard. 
     For each user query, utilize the search results to their fullest potential to provide additional information and assistance in your response.
